@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Comptabilité Analytique : Définitions Français - Arabe | Révision Examen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #1e2a3e;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px 15px;
+            background: linear-gradient(135deg, #0b3b5f, #1b5a7a);
+            border-radius: 28px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .badge {
+            background: #ffb74d;
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #2c3e2f;
+            margin-top: 12px;
+        }
+
+        /* navigation rapide */
+        .nav-chapters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .nav-chapters a {
+            text-decoration: none;
+            background: #e9ecef;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1e4663;
+            transition: 0.2s;
+        }
+
+        .nav-chapters a:hover {
+            background: #1b5a7a;
+            color: white;
+        }
+
+        /* cartes définitions */
+        .card {
+            background: white;
+            border-radius: 24px;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-header {
+            background: #f8fafc;
+            padding: 18px 24px;
+            border-bottom: 2px solid #dce5ef;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .term-fr {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0c4a6e;
+        }
+
+        .term-ar {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2c5a2e;
+            direction: rtl;
+            font-family: 'Segoe UI', 'Tahoma', 'Amiri', 'Traditional Arabic', sans-serif;
+            background: #eef2ff;
+            padding: 5px 14px;
+            border-radius: 40px;
+        }
+
+        .card-body {
+            padding: 20px 24px;
+            display: block;
+        }
+
+        .definition-fr {
+            background: #fefce8;
+            padding: 16px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #eab308;
+        }
+
+        .definition-fr p {
+            font-size: 1rem;
+            color: #1e293b;
+            font-weight: 500;
+        }
+
+        .lang-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #a16207;
+            margin-bottom: 6px;
+        }
+
+        .definition-ar {
+            background: #f0f9f4;
+            padding: 16px 20px;
+            border-radius: 20px;
+            border-right: 6px solid #2c7a4a;
+            direction: rtl;
+        }
+
+        .definition-ar p {
+            font-size: 1rem;
+            font-family: 'Segoe UI', 'Tahoma', 'Amiri', 'Traditional Arabic', serif;
+            color: #14532d;
+            line-height: 1.6;
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin: 40px 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 4px solid #1b5a7a;
+            display: inline-block;
+            color: #0f3b5c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #4b5563;
+            border-top: 1px solid #cbd5e1;
+        }
+
+        @media (max-width: 680px) {
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .term-fr {
+                font-size: 1.2rem;
+            }
+            .definition-fr p, .definition-ar p {
+                font-size: 0.9rem;
+            }
+        }
+        button.toggle-btn {
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: #2c5a6e;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📘 Comptabilité Analytique</h1>
+        <p>Définitions essentielles • Français + Traduction en Arabe</p>
+        <div class="badge">📖 Révision examen S4 - Licence Économie</div>
+    </div>
+
+    <!-- Navigation par chapitre -->
+    <div class="nav-chapters">
+        <a href="#intro">Intro</a>
+        <a href="#ch1">Ch.1 Charges</a>
+        <a href="#ch2">Ch.2 Hiérarchie coûts</a>
+        <a href="#ch3">Ch.3 Stocks</a>
+        <a href="#ch4">Ch.4 Centres d'analyse</a>
+        <a href="#ch5">Ch.5 En-cours & déchets</a>
+        <a href="#ch6">Ch.6 Imputation rationnelle</a>
+        <a href="#ch7">Ch.7 SR & coût variable</a>
+    </div>
+
+    <!-- ################# CHAPITRE INTRO ############### -->
+    <h2 class="chapter-title" id="intro">📖 Chapitre introductif</h2>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="term-fr">📌 Comptabilité analytique</span>
+            <span class="term-ar">المحاسبة التحليلية</span>
+        </div>
+        <div class="card-body">
+            <div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Outil de gestion interne qui quantifie les flux internes pour savoir qui consomme quoi et combien, et qui produit quoi, combien et comment.</p></div>
+            <div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>أداة إدارية داخلية تقوم بقياس التدفقات الداخلية لمعرفة من يستهلك ماذا وكم، ومن ينتج ماذا وكم وكيف.</p></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span class="term-fr">🎯 Objectifs de la CAE</span><span class="term-ar">أهداف المحاسبة التحليلية</span></div>
+        <div class="card-body">
+            <div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Connaître les coûts d'approvisionnement, de production et de distribution. Évaluer les stocks. Analyser les résultats en comparant les coûts aux prix de vente.</p></div>
+            <div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>معرفة تكاليف التموين والإنتاج والتوزيع. تقييم المخزونات. تحليل النتائج بمقارنة التكاليف بأسعار البيع.</p></div>
+        </div>
+    </div>
+
+    <!-- ################# CHAPITRE 1 ############### -->
+    <h2 class="chapter-title" id="ch1">💰 Chapitre 1 : Charges de la CAE</h2>
+
+    <div class="card"><div class="card-header"><span class="term-fr">Charge de la comptabilité analytique</span><span class="term-ar">عبء المحاسبة التحليلية</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Charges de la comptabilité générale diminuées des charges non incorporables, augmentées des charges supplétives et ajustées des charges calculées.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>أعباء المحاسبة العامة مخصوماً منها الأعباء غير القابلة للإدماج، مضافاً إليها الأعباء الإضافية، معدّلة بالأعباء المحسوبة.</p></div></div></div>
+
+    <div class="card"><div class="card-header"><span class="term-fr">Charges non incorporables</span><span class="term-ar">الأعباء غير القابلة للإدماج</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Charges à éliminer car sans rapport direct avec l'activité : charges exceptionnelles, provisions, amortissements des immobilisations en non-valeur, impôts sur le résultat.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>أعباء يجب استبعادها لعدم ارتباطها المباشر بالنشاط: أعباء استثنائية، مخصصات، اهتلاكات الأصول غير القابلة للتقييم، ضرائب على النتيجة.</p></div></div></div>
+
+    <div class="card"><div class="card-header"><span class="term-fr">Charges supplétives</span><span class="term-ar">الأعباء الإضافية</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Charges à ajouter qui ne figurent pas en comptabilité générale : rémunération théorique du travail de l'exploitant et rémunération des capitaux propres.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>أعباء تضاف ولا تظهر في المحاسبة العامة: الأجر النظري لعمل المستغل، والأجر النظري لرأس المال الخاص.</p></div></div></div>
+
+    <div class="card"><div class="card-header"><span class="term-fr">Charges calculées (d'usage & abonnées)</span><span class="term-ar">الأعباء المحسوبة</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Charges dont le montant doit être modifié : charges d'usage (substitution aux amortissements) et charges abonnées (calcul sur période différente).</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>أعباء يتم تعديل قيمتها: أعباء الاستعمال (بدلاً عن الاهتلاكات)، والأعباء الموزعة على فترة زمنية مختلفة.</p></div></div></div>
+
+    <!-- ################# CHAPITRE 2 ############### -->
+    <h2 class="chapter-title" id="ch2">🏭 Chapitre 2 : Hiérarchie des coûts</h2>
+
+    <div class="card"><div class="card-header"><span class="term-fr">Coût d'achat</span><span class="term-ar">تكلفة الشراء</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Prix d'achat augmenté des frais d'approvisionnement.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>سعر الشراء مضافاً إليه مصاريف التموين.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Inventaire permanent</span><span class="term-ar">الجرد الدائم</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Enregistrement permanent des mouvements de stocks permettant de connaître à tout moment les existants en quantité et en valeur.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>تسجيل دائم لحركات المخزون يمكن من معرفة الكميات والقيم الموجودة في أي وقت.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Coût de revient (marchandises vendues)</span><span class="term-ar">تكلفة البضاعة المباعة</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Somme de toutes les charges supportées depuis l'achat jusqu'à la vente.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>مجموع جميع الأعباء المتكبدة منذ الشراء حتى البيع.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Résultat analytique</span><span class="term-ar">النتيجة التحليلية</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Chiffre d'affaires hors taxes diminué du coût de revient.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>رقم الأعمال خارج الضريبة مخصوماً منه التكلفة الإجمالية.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Coût de production (produits finis)</span><span class="term-ar">تكلفة الإنتاج</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Coût d'achat des matières premières consommées augmenté des frais de production.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>تكلفة شراء المواد الأولية المستهلكة مضافاً إليها أعباء الإنتاج.</p></div></div></div>
+
+    <!-- ################# CHAPITRE 3 : STOCKS ############### -->
+    <h2 class="chapter-title" id="ch3">📦 Chapitre 3 : Évaluation des stocks</h2>
+    <div class="card"><div class="card-header"><span class="term-fr">Stock</span><span class="term-ar">المخزون</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Ensemble de biens destinés à être vendus ou consommés dans la production.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>مجموعة من السلع المعدة للبيع أو للاستهلاك في الإنتاج.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">En-cours de production</span><span class="term-ar">الإنتاج غير التام</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Produit commencé dans une période et achevé dans la suivante. Production inachevée non livrable ni stockable.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>منتج بدئ في فترة وينتهي في الفترة الموالية. إنتاج غير مكتمل لا يمكن تسليمه ولا تخزينه.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">CMUP (fin de période)</span><span class="term-ar">المتوسط المرجح (نهاية الفترة)</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Méthode qui évalue toutes les sorties au même coût moyen calculé en fin de période.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>طريقة تقيّم كل المخارج بنفس متوسط التكلفة المحتسب في نهاية الفترة.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">FIFO (First In, First Out)</span><span class="term-ar">الوارد أولاً صادر أولاً</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Méthode qui consiste à sortir d'abord les biens les plus anciens.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>طريقة تقوم على إخراج أقدم السلع أولاً.</p></div></div></div>
+
+    <!-- ################# CHAPITRE 4 ############### -->
+    <h2 class="chapter-title" id="ch4">⚙️ Chapitre 4 : Centres d'analyse & traitement des charges</h2>
+    <div class="card"><div class="card-header"><span class="term-fr">Centre d'analyse</span><span class="term-ar">مركز التحليل</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Subdivision de l’entreprise permettant de regrouper des coûts et activités similaires pour répartir les coûts, évaluer la performance et aider à la décision.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>تقسيم فرعي للمؤسسة يجمع تكاليف وأنشطة متشابهة لتوزيع التكاليف وتقييم الأداء.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Centres principaux / auxiliaires</span><span class="term-ar">مراكز رئيسية ومساعدة</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Principaux : imputés directement aux coûts (appro., production, distribution). Auxiliaires : au service des centres principaux (RH, entretien).</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>الرئيسية: تخصص مباشرة للتكاليف. المساعدة: تخدم المراكز الرئيسية (موارد بشرية، صيانة).</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Répartition primaire & secondaire</span><span class="term-ar">التوزيع الأولي والثانوي</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Primaire : répartition des charges indirectes entre tous les centres. Secondaire : répartition des centres auxiliaires vers les centres principaux.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>الأولي: توزيع الأعباء غير المباشرة على كل المراكز. الثانوي: توزيع المراكز المساعدة على المراكز الرئيسية.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Unité d'œuvre & Taux de frais</span><span class="term-ar">وحدة القياس ومعدل الأعباء</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Unité d'œuvre : unité physique mesurant l'activité d'un centre (heure, kg). Taux de frais = coût total du centre / nombre d'UO.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>وحدة القياس: كمية فيزيائية تقيس نشاط المركز (ساعة، كلغ). معدل الأعباء = تكلفة المركز الإجمالية ÷ عدد وحدات القياس.</p></div></div></div>
+
+    <!-- ################# CHAPITRE 5 ############### -->
+    <h2 class="chapter-title" id="ch5">♻️ Chapitre 5 : En-cours, déchets et rebuts</h2>
+    <div class="card"><div class="card-header"><span class="term-fr">En-cours de production</span><span class="term-ar">الإنتاج غير التام</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Produit commencé mais non achevé en fin de période. Ni livrable ni stockable en l'état.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>منتج بدأ ولم يكتمل في نهاية الفترة. غير قابل للتسليم أو التخزين بحالته.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Déchet / Rebut</span><span class="term-ar">نفايات / منتج معيب</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Déchet : résidu de matière première (chute). Rebut : produit fini défectueux ne répondant pas aux standards.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>النفايات: بقايا المواد الأولية. المنتج المعيب: منتج تام غير مطابق للمعايير.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Produit résiduel vendable / sans valeur</span><span class="term-ar">منتج متبقي قابل للبيع / بدون قيمة</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Vendable : valeur vénale diminuée des frais de distribution. Sans valeur : frais d'évacuation ajoutés au coût de production.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>القابل للبيع: قيمته السوقية ناقصاً مصاريف التوزيع. بدون قيمة: تضاف مصاريف التخلص منه إلى تكلفة الإنتاج.</p></div></div></div>
+
+    <!-- ################# CHAPITRE 6 ############### -->
+    <h2 class="chapter-title" id="ch6">📊 Chapitre 6 : Imputation rationnelle</h2>
+    <div class="card"><div class="card-header"><span class="term-fr">Imputation rationnelle</span><span class="term-ar">الاحتساب العقلاني</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Méthode qui élimine l'influence des charges fixes sur le coût de revient en cas de saisonnalité, pour stabiliser les coûts.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>طريقة تزيل تأثير الأعباء الثابتة على التكلفة الإجمالية في حالة الموسمية من أجل استقرار التكاليف.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Coefficient d'activité (CIR)</span><span class="term-ar">معامل النشاط</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Activité réelle divisée par l'activité normale.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>النشاط الفعلي مقسوماً على النشاط العادي.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Coût de sous-activité / Boni</span><span class="term-ar">تكلفة قلة النشاط / مكافأة النشاط الزائد</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Sous-activité : différence d'incorporation lorsque l'activité réelle < normale. Boni : lorsque activité réelle > normale.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>قلة النشاط: فرق الإدماج عندما يكون النشاط الفعلي أقل من العادي. المكافأة: عندما يكون النشاط الفعلي أكبر من العادي.</p></div></div></div>
+
+    <!-- ################# CHAPITRE 7 ############### -->
+    <h2 class="chapter-title" id="ch7">📈 Chapitre 7 : Coût variable & Seuil de rentabilité</h2>
+    <div class="card"><div class="card-header"><span class="term-fr">Coût variable</span><span class="term-ar">التكلفة المتغيرة</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Coût ne comprenant que les charges variables. Les charges fixes sont traitées globalement sans répartition.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>تكلفة تشمل فقط الأعباء المتغيرة. أما الأعباء الثابتة فتعالج إجمالياً دون توزيع.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Marge sur coût variable</span><span class="term-ar">هامش التكلفة المتغيرة</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Différence entre le chiffre d'affaires et le coût variable. Mesure la contribution à la couverture des charges fixes.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>الفرق بين رقم الأعمال والتكلفة المتغيرة. يقيس المساهمة في تغطية الأعباء الثابتة.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Seuil de rentabilité (SR)</span><span class="term-ar">عتبة الربحية</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Chiffre d'affaires minimum pour couvrir toutes les charges (variables + fixes). À ce niveau, le résultat est nul.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>حد أدنى لرقم الأعمال لتغطية جميع الأعباء (متغيرة + ثابتة). عنده تكون النتيجة صفراً.</p></div></div></div>
+    <div class="card"><div class="card-header"><span class="term-fr">Point mort & Marge de sécurité</span><span class="term-ar">نقطة التعادل وهامش الأمان</span></div><div class="card-body"><div class="definition-fr"><div class="lang-label">🇫🇷 FRANÇAIS</div><p>Point mort : date à laquelle le SR est atteint. Marge de sécurité : partie du CA qui dépasse le SR.</p></div><div class="definition-ar"><div class="lang-label">🇸🇦 العربية</div><p>نقطة التعادل: التاريخ الذي تتحقق عنده عتبة الربحية. هامش الأمان: جزء رقم الأعمال الذي يتجاوز عتبة الربحية.</p></div></div></div>
+
+    <footer>
+        📚 Révision Comptabilité Analytique – Définitions bilingues (Français/Arabe) – D'après cours S4 Économie.<br>
+        Toutes les définitions essentielles pour l'examen.
+    </footer>
+</div>
+</body>
+</html>
